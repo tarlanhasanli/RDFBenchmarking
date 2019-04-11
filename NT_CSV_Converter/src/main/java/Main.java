@@ -1,11 +1,11 @@
-import NTtoCSV.Read_NT;
+import NTtoCSV.NT_Converter;
 
 public class Main {
 
 
     public Main(){
 
-        new Read_NT().read().write();
+        new NT_Converter().read().write();
 
     }
 

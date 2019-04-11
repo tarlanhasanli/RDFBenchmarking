@@ -8,14 +8,14 @@ import org.apache.jena.util.FileManager;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-public class Read_NT {
+public class NT_Converter {
 
     private String sourceFile;
     private String destinationFile;
     private Model model;
     private JFileChooser chooser;
 
-    public Read_NT(){
+    public NT_Converter(){
 
         this.chooser = new JFileChooser();
         this.selectSourceFile();
@@ -46,7 +46,7 @@ public class Read_NT {
         }
     }
 
-    public Read_NT read() {
+    public NT_Converter read() {
 
         this.model = ModelFactory.createDefaultModel();
 
