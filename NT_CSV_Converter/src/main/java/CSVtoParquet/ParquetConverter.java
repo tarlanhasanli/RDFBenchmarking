@@ -1,19 +1,23 @@
-package CSVtoAvro;
+package CSVtoParquet;
 
-import org.apache.log4j.*;
-import org.apache.spark.*;
-import org.apache.spark.sql.*;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.spark.SparkConf;
+import org.apache.spark.SparkContext;
+import org.apache.spark.sql.Dataset;
+import org.apache.spark.sql.Row;
+import org.apache.spark.sql.SparkSession;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class Avro_Converter{
+public class ParquetConverter {
 
     SparkSession orCreate;
 
-    public Avro_Converter(){
+    public ParquetConverter(){
 
         File file = new File("/home/cloudera/RDFBenchmarking/Datasets/CSV");
 
@@ -35,12 +39,12 @@ public class Avro_Converter{
 
     private void convertToAvro(String path){
 
-        String avro_path = path
+        String parquet_path = path
                 .substring(0, path.lastIndexOf("."))
-                .replace("/CSV","/Avro");
+                .replace("/CSV","/Parquet");
 
         try {
-            Files.deleteIfExists(Paths.get(avro_path));
+            Files.deleteIfExists(Paths.get(parquet_path));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -55,10 +59,7 @@ public class Avro_Converter{
         rowDataset.createOrReplaceTempView("RDF_Table");
 
         rowDataset.write()
-                .format("com.databricks.spark.avro")
-                .save(avro_path); // avro path here
-
-
+                .save(parquet_path); // parquet path here
 
     }
 
