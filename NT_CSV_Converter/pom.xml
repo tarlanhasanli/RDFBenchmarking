@@ -22,11 +22,13 @@
 
     <dependencies>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.jena/jena-core -->
         <dependency>
             <groupId>org.apache.jena</groupId>
-            <artifactId>apache-jena-libs</artifactId>
+            <artifactId>jena-core</artifactId>
             <version>3.10.0</version>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
         <dependency>
@@ -55,6 +57,14 @@
             <artifactId>spark-avro_2.12</artifactId>
             <version>2.4.1</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.databricks/spark-avro -->
+        <dependency>
+            <groupId>com.databricks</groupId>
+            <artifactId>spark-avro_2.11</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
 
     </dependencies>
 
