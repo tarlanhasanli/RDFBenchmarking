@@ -1,6 +1,4 @@
-import CSVtoAvro.Avro_Converter;
-import CSVtoParquet.ParquetConverter;
-import NTtoCSV.NT_Converter;
+import CSVtoParquet.Parquet_Converter;
 
 public class Main {
 
@@ -11,7 +9,7 @@ public class Main {
 
         //new Avro_Converter();
 
-        new ParquetConverter();
+        //new Parquet_Converter();
     }
 
     public static void main(String[] args){

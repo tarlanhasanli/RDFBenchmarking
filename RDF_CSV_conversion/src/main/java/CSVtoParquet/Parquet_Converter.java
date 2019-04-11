@@ -13,11 +13,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class ParquetConverter {
+public class Parquet_Converter {
 
     SparkSession orCreate;
 
-    public ParquetConverter(){
+    public Parquet_Converter(){
 
         File file = new File("/home/cloudera/RDFBenchmarking/Datasets/CSV");
 
@@ -37,7 +37,7 @@ public class ParquetConverter {
     }
 
 
-    private void convertToAvro(String path){
+    private void convertToParquet(String path){
 
         String parquet_path = path
                 .substring(0, path.lastIndexOf("."))
@@ -59,6 +59,7 @@ public class ParquetConverter {
         rowDataset.createOrReplaceTempView("RDF_Table");
 
         rowDataset.write()
+                .format("parquet")
                 .save(parquet_path); // parquet path here
 
     }
@@ -73,7 +74,7 @@ public class ParquetConverter {
 
             }else{
 
-                convertToAvro(fileEntry.getAbsolutePath());
+                convertToParquet(fileEntry.getAbsolutePath());
 
             }
 
