@@ -10,7 +10,6 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
 import java.io.File;
-import java.io.IOException;
 
 public class Parquet_Converter {
 
