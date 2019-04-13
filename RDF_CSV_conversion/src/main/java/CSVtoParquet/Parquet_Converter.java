@@ -1,5 +1,6 @@
 package CSVtoParquet;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.SparkConf;
@@ -10,8 +11,6 @@ import org.apache.spark.sql.SparkSession;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class Parquet_Converter {
 
@@ -44,8 +43,8 @@ public class Parquet_Converter {
                 .replace("/CSV","/Parquet");
 
         try {
-            Files.deleteIfExists(Paths.get(parquet_path));
-        } catch (IOException e) {
+            FileUtils.deleteDirectory(new File(parquet_path));
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

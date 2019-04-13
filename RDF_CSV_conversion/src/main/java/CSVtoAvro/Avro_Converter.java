@@ -1,5 +1,6 @@
 package CSVtoAvro;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.*;
 import org.apache.spark.*;
 import org.apache.spark.sql.*;
@@ -40,8 +41,8 @@ public class Avro_Converter{
                 .replace("/CSV","/Avro");
 
         try {
-            Files.deleteIfExists(Paths.get(avro_path));
-        } catch (IOException e) {
+            FileUtils.deleteDirectory(new File(avro_path));
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

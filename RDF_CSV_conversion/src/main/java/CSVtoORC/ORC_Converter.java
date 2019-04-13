@@ -1,5 +1,6 @@
 package CSVtoORC;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.SparkConf;
@@ -44,8 +45,8 @@ public class ORC_Converter {
                 .replace("/CSV","/ORC");
 
         try {
-            Files.deleteIfExists(Paths.get(orc_path));
-        } catch (IOException e) {
+            FileUtils.deleteDirectory(new File(orc_path));
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
