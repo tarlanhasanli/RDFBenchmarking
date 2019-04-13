@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.project.converter</groupId>
-    <artifactId>csv-converter</artifactId>
+    <groupId>com.project.rdfbenchmarking.converter</groupId>
+    <artifactId>rdfbenchmarking-converter</artifactId>
     <version>1.0</version>
     <build>
         <plugins>
