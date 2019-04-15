@@ -1,4 +1,4 @@
-package com.project.rdfbenchmarking.queries;
+package com.project.rdfbenchmarking;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -36,16 +36,18 @@ public class Connect {
 
     }
 
-    public void createTempView(String format, String path, String tableName){
+    public SparkSession getSparkSession(){
+        return this.sparkSession;
+    }
+
+    public Dataset<Row> createTempView(String format, String path){
 
         DataFrameReader format1 = sparkSession.read().format(format);
 
         if(format.equalsIgnoreCase("csv"))
             format1 = format1.option("header", "true").option("inferSchema", "true");
 
-        Dataset<Row> rowDataset = format1.load(path).toDF();
-
-        rowDataset.createOrReplaceTempView(tableName);
+        return format1.load(path).toDF();
 
     }
 
