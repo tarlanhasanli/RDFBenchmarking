@@ -11,7 +11,7 @@ public class SingleTableQueries {
 
 		public final static String QUERY6 =
 				  "Select t1.subject, t2.object" +
-						    "from RDFTABLE t1, RDFTABLE t2" +
+						    "from SingleTable t1, SingleTable t2" +
 						    "where t1.subject = t2.subect" +
 						    "and t2.predicate = 'http://www.w3.org/2000/01/rdf-schema#label'" +
 						    "and t2.object like '%manner%'" +
@@ -30,7 +30,8 @@ public class SingleTableQueries {
 						    " t3.object as title, t4.subject as nr," +
 						    " t4.object as name, t5.object as mbox_sha1sum," +
 						    " t6.object as country" +
-						    " FROM RDFTABLE t1, RDFTABLE t2, RDFTABLE t3, RDFTABLE t4, RDFTABLE t5, RDFTABLE t6" +
+						    " FROM SingleTable t1, SingleTable t2, SingleTable t3, " +
+												  "SingleTable t4, SingleTable t5, SingleTable t6" +
 						    " WHERE t1.subject = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromRatingSite1/Review1'" +
 						    " AND t1.subject = t2.subject AND t1.subject = t3.subject AND t1.object = t4.subject" +
 						    " AND t4.subject = t5.subject AND t4.subject = t6.subject" +
@@ -50,7 +51,8 @@ public class SingleTableQueries {
 
 		public final static String QUERY10 =
 				  "Select distinct t1.subject, t4.object as price" +
-						    " from RDFTABLE t1, RDFTABLE t2, RDFTABLE t3, RDFTABLE t4, RDFTABLE t5, RDFTABLE t6" +
+						    " from SingleTable t1, SingleTable t2, SingleTable t3, " +
+												  "SingleTable t4, SingleTable t5, SingleTable t6" +
 						    " where t1.subject = t2.subject and t1.subject = t3.subject " +
 								  " and t1.subject = t4.subject and t1.subject = t5.subject " +
 
@@ -82,7 +84,7 @@ public class SingleTableQueries {
 		 * */
 
 		public final static String QUERY11 =
-										"Select t1.object from RDFTABLE t1 " +
+										"Select t1.object from SingleTable t1 " +
 																		"where t1.subject = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromVendor1/Offer1'";
 
 		/*
@@ -97,8 +99,9 @@ public class SingleTableQueries {
 																		" t4.object as offerURL, t5.object as price," +
 																		" t6.object as deliveryDays, t7.object as validTo," +
 																		" t9.object as vendorname, t10.object = vendorhomepage" +
-																		" FROM table t1, table t2, table t3, table t4, table t5, table t6, table t7," +
-																		" table t8, table t9, table t10" +
+																		" FROM SingleTable t1, SingleTable t2, SingleTable t3," +
+																		" SingleTable t4, SingleTable t5, SingleTable t6, SingleTable t7," +
+																		" SingleTable t8, SingleTable t9, SingleTable t10" +
 																		" WHERE t1.subject = t2.subject" +
 																		" AND t2.predicate = 'http://www.w3.org/2000/01/rdf-schema#label'" +
 																		" AND t3.predicate = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/vocabulary/product'" +
