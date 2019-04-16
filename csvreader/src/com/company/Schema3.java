@@ -3,14 +3,14 @@ package com.company;
 import java.io.*;
 import java.util.*;
 
-public class Schema3 {
+class Schema3 {
 
     private String destinationPath;
     private String sourceFile;
     private ReadCSV read;
     private Hashtable<String, List<String>> dataModel;
 
-    public Schema3(String sourceFile, String destinationPath){
+    Schema3(String sourceFile, String destinationPath){
 
         this.readDataModel();
         this.sourceFile = sourceFile;
@@ -35,7 +35,7 @@ public class Schema3 {
 
     }
 
-    public boolean convert(){
+    boolean convert(){
 
         this.read = new ReadCSV(sourceFile, destinationPath);
 
@@ -148,9 +148,6 @@ public class Schema3 {
             e.printStackTrace();
         }
 
-
-
     }
-
 
 }

@@ -4,36 +4,32 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 
-public class Schema2 {
+class Schema2 {
 
     private String destinationPath;
     private String sourceFile;
-    private ReadCSV read;
 
-    public Schema2(String sourceFile, String destinationPath){
+	Schema2(String sourceFile, String destinationPath){
 
         this.sourceFile = sourceFile;
         this.destinationPath = destinationPath;
 
     }
 
-    public boolean convert(){
+    void convert(){
 
-        this.read = new ReadCSV(sourceFile, destinationPath);
+	    ReadCSV read = new ReadCSV(sourceFile, destinationPath);
 
         try {
 
-            List content = read.readData();
+	         List content = read.readData();
             Hashtable data = groupDataPredicate(content);
 
-            return read.writeData(data);
+	         read.writeData(data);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        return false;
-
     }
 
     private Hashtable<String, List<String[]>> groupDataPredicate(List<String []> content){

@@ -1,7 +1,6 @@
 package com.company;
 
 import java.io.*;
-import java.net.URI;
 import java.util.*;
 
 class ReadCSV {
@@ -34,7 +33,7 @@ class ReadCSV {
     boolean writeData(Hashtable<String, List<String[]>> hashTable){
 
        try {
-            hashTable.forEach((k, v) -> createCSV(k, v));
+            hashTable.forEach(this::createCSV);
         } catch (Exception e){
             e.printStackTrace();
             return false;
@@ -47,7 +46,7 @@ class ReadCSV {
     private void createCSV(String name, List<String []> content){
 
         File file = new File(destinationPath+"\\"+URItoFilename(name)+".csv");
-        file.getParentFile().mkdirs();
+        boolean mkdirs = file.getParentFile().mkdirs();
 
         try {
 
@@ -64,19 +63,6 @@ class ReadCSV {
         catch (IOException e) {
             e.printStackTrace();
             System.exit(0);
-        }
-
-    }
-
-    String generateFilename(String uri){
-
-        try{
-            URI u = new URI(uri);
-            File f = new File(u.getPath());
-            return f.getName();
-        } catch (Exception e){
-            System.out.println("uri to file name error " + e);
-            return null;
         }
 
     }

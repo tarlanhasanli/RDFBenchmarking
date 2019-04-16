@@ -14,15 +14,13 @@ public class Main {
         this.chooser = new JFileChooser();
         this.selectSourceFile();
 
-        //Schema2 sc2 = new Schema2(sourceFile, destinationFolder + "\\VerticalTables");
-        Schema3 sc3 = new Schema3(sourceFile, destinationFolder + "\\PropertyTables");
-
-        //sc2.convert();
-        sc3.convert();
+        new Schema2(sourceFile, destinationFolder + "\\VerticalTables").convert();
+        new Schema3(sourceFile, destinationFolder + "\\PropertyTables").convert();
 
     }
 
     private void selectSourceFile(){
+
         chooser.setFileSelectionMode( JFileChooser.FILES_ONLY );
         chooser.setDialogTitle("Select Source file");
         chooser.setFileFilter(new FileNameExtensionFilter(
@@ -46,10 +44,6 @@ public class Main {
     public static void main(String[] args) {
 
         new Main();
-
-        //ReadNT rnt = new ReadNT();
-
-        //rnt.writeData();
 
     }
 }
