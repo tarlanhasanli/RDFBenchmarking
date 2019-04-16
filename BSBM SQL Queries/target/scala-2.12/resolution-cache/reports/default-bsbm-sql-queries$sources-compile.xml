@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190416142926"/>
+		date="20190416184233"/>
 	<dependencies>
 		<module organisation="xml-apis" name="xml-apis">
 			<revision name="1.3.04" status="release" pubdate="20061222153752" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
@@ -27,7 +27,7 @@
 				<metadata-artifact status="no" details="" size="85306" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-sql_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.12/2.4.1/spark-sql_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-sql_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1195855" time="3589" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-sql_2.12\srcs\spark-sql_2.12-2.4.1-sources.jar">
+					<artifact name="spark-sql_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1195855" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-sql_2.12\srcs\spark-sql_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.12/2.4.1/spark-sql_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -39,7 +39,7 @@
 				<metadata-artifact status="no" details="" size="10300" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.arrow\arrow-vector\ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-vector/0.10.0/arrow-vector-0.10.0.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="arrow-vector" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="714815" time="1019" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.arrow\arrow-vector\srcs\arrow-vector-0.10.0-sources.jar">
+					<artifact name="arrow-vector" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="714815" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.arrow\arrow-vector\srcs\arrow-vector-0.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-vector/0.10.0/arrow-vector-0.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -87,7 +87,7 @@
 				<metadata-artifact status="no" details="" size="8855" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.arrow\arrow-memory\ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-memory/0.10.0/arrow-memory-0.10.0.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="arrow-memory" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="64298" time="775" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.arrow\arrow-memory\srcs\arrow-memory-0.10.0-sources.jar">
+					<artifact name="arrow-memory" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="64298" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.arrow\arrow-memory\srcs\arrow-memory-0.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-memory/0.10.0/arrow-memory-0.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -123,7 +123,7 @@
 				<metadata-artifact status="no" details="" size="8976" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.arrow\arrow-format\ivy-0.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-format/0.10.0/arrow-format-0.10.0.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="arrow-format" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="38133" time="784" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.arrow\arrow-format\srcs\arrow-format-0.10.0-sources.jar">
+					<artifact name="arrow-format" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="38133" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.arrow\arrow-format\srcs\arrow-format-0.10.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/arrow/arrow-format/0.10.0/arrow-format-0.10.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -147,7 +147,7 @@
 				<metadata-artifact status="no" details="" size="9328" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-hadoop\ivy-1.10.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.10.1/parquet-hadoop-1.10.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.10.1" rev-constraint-default="1.10.1" rev-constraint-dynamic="1.10.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-hadoop" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="167126" time="532" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-hadoop\srcs\parquet-hadoop-1.10.1-sources.jar">
+					<artifact name="parquet-hadoop" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="167126" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-hadoop\srcs\parquet-hadoop-1.10.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.10.1/parquet-hadoop-1.10.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -159,7 +159,7 @@
 				<metadata-artifact status="no" details="" size="8044" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-jackson\ivy-1.10.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.10.1/parquet-jackson-1.10.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.10.1" rev-constraint-default="1.10.1" rev-constraint-dynamic="1.10.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-jackson" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4185" time="1071" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-jackson\srcs\parquet-jackson-1.10.1-sources.jar">
+					<artifact name="parquet-jackson" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4185" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-jackson\srcs\parquet-jackson-1.10.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-jackson/1.10.1/parquet-jackson-1.10.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -171,7 +171,7 @@
 				<metadata-artifact status="no" details="" size="9212" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-column\ivy-1.10.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.10.1/parquet-column-1.10.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.10.1" rev-constraint-default="1.10.1" rev-constraint-dynamic="1.10.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-column" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="265821" time="533" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-column\srcs\parquet-column-1.10.1-sources.jar">
+					<artifact name="parquet-column" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="265821" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-column\srcs\parquet-column-1.10.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-column/1.10.1/parquet-column-1.10.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -183,7 +183,7 @@
 				<metadata-artifact status="no" details="" size="7965" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-encoding\ivy-1.10.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.10.1/parquet-encoding-1.10.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.10.1" rev-constraint-default="1.10.1" rev-constraint-dynamic="1.10.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-encoding" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="835954" time="3466" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-encoding\srcs\parquet-encoding-1.10.1-sources.jar">
+					<artifact name="parquet-encoding" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="835954" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-encoding\srcs\parquet-encoding-1.10.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.10.1/parquet-encoding-1.10.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -195,7 +195,7 @@
 				<metadata-artifact status="no" details="" size="8065" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-common\ivy-1.10.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.10.1/parquet-common-1.10.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.10.1" rev-constraint-default="1.10.1" rev-constraint-dynamic="1.10.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="67338" time="795" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-common\srcs\parquet-common-1.10.1-sources.jar">
+					<artifact name="parquet-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="67338" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-common\srcs\parquet-common-1.10.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.10.1/parquet-common-1.10.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -207,7 +207,7 @@
 				<metadata-artifact status="no" details="" size="4522" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-format\ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.4.0/parquet-format-2.4.0.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="parquet-format" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="180150" time="1026" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-format\srcs\parquet-format-2.4.0-sources.jar">
+					<artifact name="parquet-format" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="180150" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.parquet\parquet-format\srcs\parquet-format-2.4.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.4.0/parquet-format-2.4.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -219,7 +219,7 @@
 				<metadata-artifact status="no" details="" size="3693" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.univocity\univocity-parsers\ivy-2.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/2.7.3/univocity-parsers-2.7.3.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.7.3" rev-constraint-default="2.7.3" rev-constraint-dynamic="2.7.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="univocity-parsers" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="382712" time="1118" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.univocity\univocity-parsers\srcs\univocity-parsers-2.7.3-sources.jar">
+					<artifact name="univocity-parsers" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="382712" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.univocity\univocity-parsers\srcs\univocity-parsers-2.7.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/univocity/univocity-parsers/2.7.3/univocity-parsers-2.7.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -231,7 +231,7 @@
 				<metadata-artifact status="no" details="" size="21461" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.orc\orc-mapreduce\ivy-1.5.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.5.5/orc-mapreduce-1.5.5.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.5.5" rev-constraint-default="1.5.5" rev-constraint-dynamic="1.5.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="orc-mapreduce" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="36693" time="1395" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.orc\orc-mapreduce\srcs\orc-mapreduce-1.5.5-sources.jar">
+					<artifact name="orc-mapreduce" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36693" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.orc\orc-mapreduce\srcs\orc-mapreduce-1.5.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/orc/orc-mapreduce/1.5.5/orc-mapreduce-1.5.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -243,7 +243,7 @@
 				<metadata-artifact status="no" details="" size="22487" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.orc\orc-core\ivy-1.5.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/orc/orc-core/1.5.5/orc-core-1.5.5.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.5.5" rev-constraint-default="1.5.5" rev-constraint-dynamic="1.5.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="orc-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="337155" time="1327" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.orc\orc-core\srcs\orc-core-1.5.5-sources.jar">
+					<artifact name="orc-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="337155" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.orc\orc-core\srcs\orc-core-1.5.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/orc/orc-core/1.5.5/orc-core-1.5.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -255,7 +255,7 @@
 				<metadata-artifact status="no" details="" size="20899" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\io.airlift\aircompressor\ivy-0.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/airlift/aircompressor/0.10/aircompressor-0.10.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="0.10" rev-constraint-default="0.10" rev-constraint-dynamic="0.10" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="aircompressor" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="102341" time="1380" location="C:\Users\Tarlan Hasanli\.ivy2\cache\io.airlift\aircompressor\srcs\aircompressor-0.10-sources.jar">
+					<artifact name="aircompressor" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="102341" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\io.airlift\aircompressor\srcs\aircompressor-0.10-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/airlift/aircompressor/0.10/aircompressor-0.10-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -267,7 +267,7 @@
 				<metadata-artifact status="no" details="" size="20825" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.orc\orc-shims\ivy-1.5.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/orc/orc-shims/1.5.5/orc-shims-1.5.5.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.5.5" rev-constraint-default="1.5.5" rev-constraint-dynamic="1.5.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="orc-shims" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="19171" time="3490" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.orc\orc-shims\srcs\orc-shims-1.5.5-sources.jar">
+					<artifact name="orc-shims" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19171" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.orc\orc-shims\srcs\orc-shims-1.5.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/orc/orc-shims/1.5.5/orc-shims-1.5.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -279,7 +279,7 @@
 				<metadata-artifact status="no" details="" size="81610" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-catalyst_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.12/2.4.1/spark-catalyst_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-catalyst_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1041321" time="1585" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-catalyst_2.12\srcs\spark-catalyst_2.12-2.4.1-sources.jar">
+					<artifact name="spark-catalyst_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1041321" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-catalyst_2.12\srcs\spark-catalyst_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.12/2.4.1/spark-catalyst_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -291,7 +291,7 @@
 				<metadata-artifact status="no" details="" size="10706" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\commons-codec\commons-codec\ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="301032" time="1205" location="C:\Users\Tarlan Hasanli\.ivy2\cache\commons-codec\commons-codec\srcs\commons-codec-1.10-sources.jar">
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="301032" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\commons-codec\commons-codec\srcs\commons-codec-1.10-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -315,7 +315,7 @@
 				<metadata-artifact status="no" details="" size="4215" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.codehaus.janino\janino\ivy-3.0.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.9/janino-3.0.9.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="3.0.9" rev-constraint-default="3.0.9" rev-constraint-dynamic="3.0.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="janino" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="390784" time="1163" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.codehaus.janino\janino\srcs\janino-3.0.9-sources.jar">
+					<artifact name="janino" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="390784" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.codehaus.janino\janino\srcs\janino-3.0.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/janino/3.0.9/janino-3.0.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -327,7 +327,7 @@
 				<metadata-artifact status="no" details="" size="3777" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.codehaus.janino\commons-compiler\ivy-3.0.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.9/commons-compiler-3.0.9.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="3.0.9" rev-constraint-default="3.0.9" rev-constraint-dynamic="3.0.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-compiler" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="56412" time="3455" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.codehaus.janino\commons-compiler\srcs\commons-compiler-3.0.9-sources.jar">
+					<artifact name="commons-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="56412" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.codehaus.janino\commons-compiler\srcs\commons-compiler-3.0.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/3.0.9/commons-compiler-3.0.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -339,7 +339,7 @@
 				<metadata-artifact status="no" details="" size="78941" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-sketch_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.12/2.4.1/spark-sketch_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-sketch_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="24710" time="537" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-sketch_2.12\srcs\spark-sketch_2.12-2.4.1-sources.jar">
+					<artifact name="spark-sketch_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="24710" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-sketch_2.12\srcs\spark-sketch_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.12/2.4.1/spark-sketch_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -351,7 +351,7 @@
 				<metadata-artifact status="no" details="" size="98789" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-core_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.12/2.4.1/spark-core_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-core_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1893087" time="1467" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-core_2.12\srcs\spark-core_2.12-2.4.1-sources.jar">
+					<artifact name="spark-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1893087" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-core_2.12\srcs\spark-core_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.12/2.4.1/spark-core_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -363,7 +363,7 @@
 				<metadata-artifact status="no" details="" size="3483" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\net.sf.py4j\py4j\ivy-0.10.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/py4j/py4j/0.10.7/py4j-0.10.7.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="0.10.7" rev-constraint-default="0.10.7" rev-constraint-dynamic="0.10.7" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="py4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="123649" time="3819" location="C:\Users\Tarlan Hasanli\.ivy2\cache\net.sf.py4j\py4j\srcs\py4j-0.10.7-sources.jar">
+					<artifact name="py4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="123649" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\net.sf.py4j\py4j\srcs\py4j-0.10.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/py4j/py4j/0.10.7/py4j-0.10.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -495,7 +495,7 @@
 				<metadata-artifact status="no" details="" size="3001" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-jackson_2.12\ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.12/3.5.3/json4s-jackson_2.12-3.5.3.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-jackson_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7294" time="1076" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-jackson_2.12\srcs\json4s-jackson_2.12-3.5.3-sources.jar">
+					<artifact name="json4s-jackson_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7294" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-jackson_2.12\srcs\json4s-jackson_2.12-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.12/3.5.3/json4s-jackson_2.12-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -507,7 +507,7 @@
 				<metadata-artifact status="no" details="" size="3286" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-core_2.12\ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.5.3/json4s-core_2.12-3.5.3.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-core_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="42960" time="681" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-core_2.12\srcs\json4s-core_2.12-3.5.3-sources.jar">
+					<artifact name="json4s-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42960" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-core_2.12\srcs\json4s-core_2.12-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.5.3/json4s-core_2.12-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -531,7 +531,7 @@
 				<metadata-artifact status="no" details="" size="2690" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-scalap_2.12\ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.5.3/json4s-scalap_2.12-3.5.3.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-scalap_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18582" time="1267" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-scalap_2.12\srcs\json4s-scalap_2.12-3.5.3-sources.jar">
+					<artifact name="json4s-scalap_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18582" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-scalap_2.12\srcs\json4s-scalap_2.12-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.5.3/json4s-scalap_2.12-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -543,7 +543,7 @@
 				<metadata-artifact status="no" details="" size="2681" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-ast_2.12\ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.5.3/json4s-ast_2.12-3.5.3.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="json4s-ast_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6975" time="1431" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-ast_2.12\srcs\json4s-ast_2.12-3.5.3-sources.jar">
+					<artifact name="json4s-ast_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6975" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.json4s\json4s-ast_2.12\srcs\json4s-ast_2.12-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.5.3/json4s-ast_2.12-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -591,7 +591,7 @@
 				<metadata-artifact status="no" details="" size="3983" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.xerial.snappy\snappy-java\ivy-1.1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.1.7.1" rev-constraint-default="1.1.7.1" rev-constraint-dynamic="1.1.7.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2013891" time="1412" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.xerial.snappy\snappy-java\srcs\snappy-java-1.1.7.1-sources.jar">
+					<artifact name="snappy-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2013891" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.xerial.snappy\snappy-java\srcs\snappy-java-1.1.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -663,7 +663,7 @@
 				<metadata-artifact status="no" details="" size="80144" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-unsafe_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.12/2.4.1/spark-unsafe_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-unsafe_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="43060" time="851" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-unsafe_2.12\srcs\spark-unsafe_2.12-2.4.1-sources.jar">
+					<artifact name="spark-unsafe_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43060" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-unsafe_2.12\srcs\spark-unsafe_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.12/2.4.1/spark-unsafe_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -675,7 +675,7 @@
 				<metadata-artifact status="no" details="" size="80384" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-network-shuffle_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.12/2.4.1/spark-network-shuffle_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-network-shuffle_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="49835" time="3477" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-network-shuffle_2.12\srcs\spark-network-shuffle_2.12-2.4.1-sources.jar">
+					<artifact name="spark-network-shuffle_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49835" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-network-shuffle_2.12\srcs\spark-network-shuffle_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.12/2.4.1/spark-network-shuffle_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -687,7 +687,7 @@
 				<metadata-artifact status="no" details="" size="81171" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-network-common_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.12/2.4.1/spark-network-common_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-network-common_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="141136" time="1182" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-network-common_2.12\srcs\spark-network-common_2.12-2.4.1-sources.jar">
+					<artifact name="spark-network-common_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="141136" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-network-common_2.12\srcs\spark-network-common_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.12/2.4.1/spark-network-common_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -735,7 +735,7 @@
 				<metadata-artifact status="no" details="" size="80278" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-kvstore_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.12/2.4.1/spark-kvstore_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-kvstore_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="34004" time="1431" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-kvstore_2.12\srcs\spark-kvstore_2.12-2.4.1-sources.jar">
+					<artifact name="spark-kvstore_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34004" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-kvstore_2.12\srcs\spark-kvstore_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.12/2.4.1/spark-kvstore_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -759,7 +759,7 @@
 				<metadata-artifact status="no" details="" size="81944" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-launcher_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.12/2.4.1/spark-launcher_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-launcher_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55283" time="409" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-launcher_2.12\srcs\spark-launcher_2.12-2.4.1-sources.jar">
+					<artifact name="spark-launcher_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55283" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-launcher_2.12\srcs\spark-launcher_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.12/2.4.1/spark-launcher_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -771,7 +771,7 @@
 				<metadata-artifact status="no" details="" size="78657" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-tags_2.12\ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.12/2.4.1/spark-tags_2.12-2.4.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="spark-tags_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="14778" time="586" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-tags_2.12\srcs\spark-tags_2.12-2.4.1-sources.jar">
+					<artifact name="spark-tags_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="14778" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.spark\spark-tags_2.12\srcs\spark-tags_2.12-2.4.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.12/2.4.1/spark-tags_2.12-2.4.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -939,7 +939,7 @@
 				<metadata-artifact status="no" details="" size="12302" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.xbean\xbean-asm6-shaded\ivy-4.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/xbean/xbean-asm6-shaded/4.8/xbean-asm6-shaded-4.8.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="4.8" rev-constraint-default="4.8" rev-constraint-dynamic="4.8" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="xbean-asm6-shaded" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="365588" time="845" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.xbean\xbean-asm6-shaded\srcs\xbean-asm6-shaded-4.8-sources.jar">
+					<artifact name="xbean-asm6-shaded" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="365588" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.xbean\xbean-asm6-shaded\srcs\xbean-asm6-shaded-4.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/xbean/xbean-asm6-shaded/4.8/xbean-asm6-shaded-4.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -951,7 +951,7 @@
 				<metadata-artifact status="no" details="" size="3212" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.twitter\chill_2.12\ivy-0.9.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill_2.12/0.9.3/chill_2.12-0.9.3.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="chill_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="37928" time="541" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.twitter\chill_2.12\srcs\chill_2.12-0.9.3-sources.jar">
+					<artifact name="chill_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37928" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.twitter\chill_2.12\srcs\chill_2.12-0.9.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill_2.12/0.9.3/chill_2.12-0.9.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -963,7 +963,7 @@
 				<metadata-artifact status="no" details="" size="2928" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.twitter\chill-java\ivy-0.9.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.9.3/chill-java-0.9.3.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="58506" time="1180" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.twitter\chill-java\srcs\chill-java-0.9.3-sources.jar">
+					<artifact name="chill-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="58506" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.twitter\chill-java\srcs\chill-java-0.9.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/chill-java/0.9.3/chill-java-0.9.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -975,7 +975,7 @@
 				<metadata-artifact status="no" details="" size="4587" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.esotericsoftware\kryo-shaded\ivy-4.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/4.0.2/kryo-shaded-4.0.2.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="4.0.2" rev-constraint-default="4.0.2" rev-constraint-dynamic="4.0.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="kryo-shaded" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="207614" time="1327" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.esotericsoftware\kryo-shaded\srcs\kryo-shaded-4.0.2-sources.jar">
+					<artifact name="kryo-shaded" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="207614" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.esotericsoftware\kryo-shaded\srcs\kryo-shaded-4.0.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/4.0.2/kryo-shaded-4.0.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -987,7 +987,7 @@
 				<metadata-artifact status="no" details="" size="3495" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.objenesis\objenesis\ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="56096" time="1057" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.objenesis\objenesis\srcs\objenesis-2.5.1-sources.jar">
+					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="56096" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.objenesis\objenesis\srcs\objenesis-2.5.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1011,7 +1011,7 @@
 				<metadata-artifact status="no" details="" size="12368" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.avro\avro-mapred\ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="avro-mapred" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="132255" time="1429" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.avro\avro-mapred\srcs\avro-mapred-1.8.2-sources.jar">
+					<artifact name="avro-mapred" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="132255" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.avro\avro-mapred\srcs\avro-mapred-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro-mapred/1.8.2/avro-mapred-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1023,7 +1023,7 @@
 				<metadata-artifact status="no" details="" size="12586" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.avro\avro-ipc\ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro-ipc/1.8.2/avro-ipc-1.8.2.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="avro-ipc" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="148578" time="1137" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.avro\avro-ipc\srcs\avro-ipc-1.8.2-sources.jar">
+					<artifact name="avro-ipc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="148578" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.avro\avro-ipc\srcs\avro-ipc-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro-ipc/1.8.2/avro-ipc-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1035,7 +1035,7 @@
 				<metadata-artifact status="no" details="" size="12193" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.avro\avro\ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="avro" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="300643" time="1519" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.avro\avro\srcs\avro-1.8.2-sources.jar">
+					<artifact name="avro" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="300643" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.avro\avro\srcs\avro-1.8.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1047,7 +1047,7 @@
 				<metadata-artifact status="no" details="" size="10486" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.commons\commons-compress\ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-compress" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="377163" time="974" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.commons\commons-compress\srcs\commons-compress-1.8.1-sources.jar">
+					<artifact name="commons-compress" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="377163" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.commons\commons-compress\srcs\commons-compress-1.8.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1059,7 +1059,7 @@
 				<metadata-artifact status="no" details="" size="2433" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.tukaani\xz\ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tukaani/xz/1.5/xz-1.5.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="xz" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="117832" time="970" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.tukaani\xz\srcs\xz-1.5-sources.jar">
+					<artifact name="xz" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="117832" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.tukaani\xz\srcs\xz-1.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tukaani/xz/1.5/xz-1.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1071,7 +1071,7 @@
 				<metadata-artifact status="no" details="" size="2964" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="scala-parser-combinators_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="46978" time="958" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\srcs\scala-parser-combinators_2.12-1.1.0-sources.jar">
+					<artifact name="scala-parser-combinators_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="46978" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\srcs\scala-parser-combinators_2.12-1.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1266,7 +1266,7 @@
 				<metadata-artifact status="no" details="" size="4402" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.fasterxml.jackson.module\jackson-module-scala_2.12\ivy-2.6.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.6.7.1/jackson-module-scala_2.12-2.6.7.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="2.6.7.1" rev-constraint-default="2.6.7.1" rev-constraint-dynamic="2.6.7.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="jackson-module-scala_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="52620" time="1433" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.fasterxml.jackson.module\jackson-module-scala_2.12\srcs\jackson-module-scala_2.12-2.6.7.1-sources.jar">
+					<artifact name="jackson-module-scala_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="52620" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\com.fasterxml.jackson.module\jackson-module-scala_2.12\srcs\jackson-module-scala_2.12-2.6.7.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.6.7.1/jackson-module-scala_2.12-2.6.7.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1605,7 +1605,7 @@
 				<metadata-artifact status="no" details="" size="8616" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="4.2.5" rev-constraint-default="4.2.5" rev-constraint-dynamic="4.2.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="524878" time="868" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.httpcomponents\httpclient\srcs\httpclient-4.2.5-sources.jar">
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="524878" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.httpcomponents\httpclient\srcs\httpclient-4.2.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1617,7 +1617,7 @@
 				<metadata-artifact status="no" details="" size="6617" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="4.2.4" rev-constraint-default="4.2.4" rev-constraint-dynamic="4.2.4" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="325247" time="1233" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.httpcomponents\httpcore\srcs\httpcore-4.2.4-sources.jar">
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="325247" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\org.apache.httpcomponents\httpcore\srcs\httpcore-4.2.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1760,7 +1760,7 @@
 				<metadata-artifact status="no" details="" size="8136" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\commons-net\commons-net\ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="commons-net" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="406713" time="839" location="C:\Users\Tarlan Hasanli\.ivy2\cache\commons-net\commons-net\srcs\commons-net-3.1-sources.jar">
+					<artifact name="commons-net" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="406713" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\commons-net\commons-net\srcs\commons-net-3.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-net/commons-net/3.1/commons-net-3.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1868,7 +1868,7 @@
 				<metadata-artifact status="no" details="" size="2613" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\junit\junit\ivy-3.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom"/>
 				<caller organisation="default" name="bsbm-sql-queries$sources" conf="compile" rev="3.8.1" rev-constraint-default="3.8.1" rev-constraint-dynamic="3.8.1" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="57635" time="778" location="C:\Users\Tarlan Hasanli\.ivy2\cache\junit\junit\srcs\junit-3.8.1-sources.jar">
+					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="57635" time="0" location="C:\Users\Tarlan Hasanli\.ivy2\cache\junit\junit\srcs\junit-3.8.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1-sources.jar"/>
 					</artifact>
 				</artifacts>
