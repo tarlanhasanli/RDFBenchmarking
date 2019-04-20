@@ -4,7 +4,7 @@
 		module="bsbm-sql-queries$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190416184233"
+		publication="20190420105232"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

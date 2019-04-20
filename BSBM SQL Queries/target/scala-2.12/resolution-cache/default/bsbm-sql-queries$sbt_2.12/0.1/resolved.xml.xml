@@ -4,7 +4,7 @@
 		module="bsbm-sql-queries$sbt_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20190416184228"
+		publication="20190420105222"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
