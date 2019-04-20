@@ -57,11 +57,11 @@ class PropertyTableQueries {
 		 * that is directly related to this offer.
 		 * */
 
+  // TODO Add Following columns to below query: producer, publisher, publishDate
   val query11 =
     """
       |SELECT product, vendor, price, validFrom, validTo,
-      |deliveryDays, offerWebpage,
-      |producer, publisher, publishDate
+      |deliveryDays, offerWebpage
       |FROM offer
       |WHERE subject='http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromVendor1/Offer1'
     """.stripMargin
