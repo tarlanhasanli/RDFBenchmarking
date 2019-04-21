@@ -1,5 +1,11 @@
 *.class
 *.log
+*.iml
+*.ipr
+*.iws
 
 .idea/
-NT_CSV_Converter/.idea/
+*/.idea/
+
+*/log/
+*/target/
