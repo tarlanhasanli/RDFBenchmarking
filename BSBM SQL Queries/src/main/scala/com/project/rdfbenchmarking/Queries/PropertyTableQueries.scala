@@ -13,7 +13,7 @@ class PropertyTableQueries {
     """
       |SELECT subject, label
       |FROM product p
-      |WHERE label like '%manner%';
+      |WHERE label like '%manner%'
     """.stripMargin
 
   /*
@@ -27,8 +27,8 @@ class PropertyTableQueries {
     """
       |SELECT p.subject, p.name, p.mbox_sha1sum, p.country, r2.subject, r2.reviewFor, r2.title
       |FROM review r, person p, review r2
-      |WHERE r.nr='http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromRatingSite1/Review1'
-      |AND r.reviewer=p.subject AND r2.reviewer=p.subject
+      |WHERE r.subject = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromRatingSite1/Review1'
+      |AND trim(r.reviewer)=p.subject AND trim(r2.reviewer)=p.subject
     """.stripMargin
 
   /*
@@ -40,13 +40,14 @@ class PropertyTableQueries {
 
   val query10 =
     """
-      |SELECT distinct o.subject, o.price FROM offer o, vendor v
-      |WHERE o.product='http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1'
-      |AND SUBSTRING(o.deliveryDays,1,CHARINDEX('^',o.deliveryDays)-1)<=3
-      |AND v.country='US'
-      |AND SUBSTRING(o.validTo,1,CHARINDEX('^',o.validTo)-1)>'2008-08-01T00:00:00'
-      |AND o.vendor=v.subject
-      |Order BY o.price
+      |SELECT distinct o.subject, SUBSTRING(o.price ,1,instr(o.price , '^')-1) AS price
+      |FROM offer o, vendor v
+      |WHERE trim(o.product) = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1'
+      |AND SUBSTRING(o.deliveryDays,1,instr(o.deliveryDays,'^')-1)<=3
+      |AND trim(v.country) = 'http://downlode.org/rdf/iso-3166/countries#GB'
+      |AND CAST(SUBSTRING(o.validTo,1,instr(o.validTo,'^')-1) AS DATE) > CAST('2008-05-01T00:00:00' AS DATE)
+      |AND trim(o.vendor) = v.subject
+      |Order BY price
       |LIMIT 10
     """.stripMargin
 
@@ -60,8 +61,7 @@ class PropertyTableQueries {
   // TODO Add Following columns to below query: producer, publisher, publishDate
   val query11 =
     """
-      |SELECT product, vendor, price, validFrom, validTo,
-      |deliveryDays, offerWebpage
+      |SELECT product, vendor, price, validFrom, validTo, deliveryDays, offerWebpage
       |FROM offer
       |WHERE subject='http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromVendor1/Offer1'
     """.stripMargin
@@ -75,11 +75,11 @@ class PropertyTableQueries {
 
   val query12 =
     """
-      |SELECT p.subject AS productNr, p.label AS productlabel, v.label AS vendorname, v.homepage AS vendorhomepage,
-      |o.offerWebpage AS offerURL, o.price AS price, o.deliveryDays AS deliveryDays, o.validTo AS validTo
-      |FROM offer o, product p, vendor v
-      |WHERE o.subject='http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromVendor1/Offer1'
-      |AND o.product=p.subject AND o.vendor=v.subject
+      |Select p.subject As productNr, p.label As productlabel, v.label As vendorname, v.homepage As vendorhomepage,
+      |o.offerWebpage As offerURL, o.price As price, o.deliveryDays As deliveryDays, o.validTo As validTo
+      |From offer o, product p, vendor v
+      |Where o.subject='http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromVendor1/Offer1'
+      |AND trim(o.product)=p.subject AND trim(o.vendor)=v.subject
     """.stripMargin
 
 }
