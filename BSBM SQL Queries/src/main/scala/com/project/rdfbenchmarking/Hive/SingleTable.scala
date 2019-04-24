@@ -5,7 +5,7 @@ import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.{SparkConf, SparkContext}
 
-class SingleTable {
+object SingleTable {
 
   def main(args: Array[String]): Unit = {
 
