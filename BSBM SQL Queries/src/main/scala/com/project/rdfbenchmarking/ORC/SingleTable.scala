@@ -5,7 +5,7 @@ import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.{SparkConf, SparkContext}
 
-class SingleTable {
+object SingleTable {
 
   def main(args: Array[String]): Unit = {
 
@@ -26,7 +26,7 @@ class SingleTable {
       .format("org.apache.spark.sql.execution.datasources.orc")
       .option("header", "true")
       .option("inferSchema", "true")
-      .load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/ORC/SingleTable/SingleTable")
+      .load("/user/cloudera/RDFBenchHDFS/ORC/SingleTable/SingleTable")
       .toDF()
 
     RDF_DF.createOrReplaceTempView("SingleTable")

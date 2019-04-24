@@ -5,7 +5,7 @@ import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.{SparkConf, SparkContext}
 
-class PropertyTables {
+object PropertyTables {
 
   def main(args: Array[String]): Unit = {
 
@@ -22,28 +22,28 @@ class PropertyTables {
       .appName("Spark SQL basic example")
       .getOrCreate()
 
-    val RDF_DF_OFFER = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/Offer").toDF()
+    val RDF_DF_OFFER = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/Offer").toDF()
     RDF_DF_OFFER.createOrReplaceTempView("Offer")
 
-    val RDF_DF_Person = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/Person").toDF()
+    val RDF_DF_Person = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/Person").toDF()
     RDF_DF_Person.createOrReplaceTempView("Person")
 
-    val RDF_DF_Producer = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/producer").toDF()
+    val RDF_DF_Producer = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/producer").toDF()
     RDF_DF_Producer.createOrReplaceTempView("Producer")
 
-    val RDF_DF_Product = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/product").toDF()
+    val RDF_DF_Product = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/product").toDF()
     RDF_DF_Product.createOrReplaceTempView("Product")
 
-    val RDF_DF_ProductFeature = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/productFeature").toDF()
+    val RDF_DF_ProductFeature = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/productFeature").toDF()
     RDF_DF_ProductFeature.createOrReplaceTempView("ProductFeature")
 
-    val RDF_DF_ProductType = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/ProductType").toDF()
+    val RDF_DF_ProductType = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/ProductType").toDF()
     RDF_DF_ProductType.createOrReplaceTempView("ProductType")
 
-    val RDF_DF_Review = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/Review").toDF()
+    val RDF_DF_Review = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/Review").toDF()
     RDF_DF_Review.createOrReplaceTempView("Review")
 
-    val RDF_DF_Vendor = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("hdfs://quickstart:8020/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/vendor").toDF()
+    val RDF_DF_Vendor = sparkSession.read.format("org.apache.spark.sql.execution.datasources.orc").load("/user/cloudera/RDFBenchHDFS/ORC/PropertyTables/vendor").toDF()
     RDF_DF_Vendor.createOrReplaceTempView("Vendor")
 
     sparkSession.time(
