@@ -1,4 +1,0 @@
-subject,predicate,object
-http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/ProductType5
-http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/ProductType1
-http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/ProductType2
