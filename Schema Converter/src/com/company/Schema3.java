@@ -31,11 +31,13 @@ class Schema3 {
         dataModel.put("Offer",  new ArrayList<>(Arrays.asList("product","vendor","price","validFrom","validTo","deliveryDays","offerWebpage", "publisher", "date")));
         dataModel.put("Review", new ArrayList<>(Arrays.asList("reviewFor","reviewer","reviewDate","title","text","rating1","rating2","rating3","rating4")));
         dataModel.put("Vendor", new ArrayList<>(Arrays.asList("label","comment","type","homepage","country")));
-        dataModel.put("Reviewer", new ArrayList<>(Arrays.asList("name","mbox_sha1sum","country")));
+	    dataModel.put("Reviewer", new ArrayList<>(Arrays.asList("name","mbox_sha1sum","country")));
+	    dataModel.put("productFeatureProduct", new ArrayList<>(Collections.singletonList("productFeature")));
+	    dataModel.put("typeProduct", new ArrayList<>(Collections.singletonList("type")));
 
     }
 
-    boolean convert(){
+    void convert(){
 
         this.read = new ReadCSV(sourceFile, destinationPath);
 
@@ -48,15 +50,13 @@ class Schema3 {
 
                 Hashtable<String, String[]> table = createVerticalTable(k, v);
 
-                createCSV(k, table);
+	            createCSV(k.toLowerCase(), table);
 
             });
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        return false;
 
     }
 
@@ -70,6 +70,24 @@ class Schema3 {
             int start=key.lastIndexOf("/");
             key = key.substring(start+1).replaceAll("\\d", "");
 
+            if(key.equalsIgnoreCase("product") &&
+		            (read.URItoFilename(items[1]).equalsIgnoreCase("Type") ||
+	                read.URItoFilename(items[1]).equalsIgnoreCase("ProductFeature"))){
+
+            	String _key = read.URItoFilename(items[1]).replaceAll("\\d", "")+"Product";
+	            String[] _value = {items[0], items[1], items[2]};
+	            List<String[]> _current;
+
+	            if(hashTable.containsKey(_key))
+		            _current = hashTable.get(_key);
+	            else
+		            _current = new ArrayList<>();
+
+	            _current.add(_value);
+
+	            hashTable.put(_key, _current);
+
+            }
 
             String [] value = {items[0], items[1], items[2]};
             List<String[]> current;

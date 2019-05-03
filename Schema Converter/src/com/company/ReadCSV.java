@@ -52,7 +52,7 @@ class ReadCSV {
 
             Writer writer = new FileWriter(file, false);
 
-            writer.write("Subject,Object\n");
+            writer.write("subject,object\n");
 
             for(String[] s : content){
                 writer.write(s[0]+","+s[1]+"\n");
