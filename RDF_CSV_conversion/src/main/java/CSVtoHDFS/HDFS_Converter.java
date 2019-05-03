@@ -10,6 +10,7 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
 import java.io.File;
+import java.util.HashSet;
 import java.util.Set;
 
 public class HDFS_Converter {
@@ -24,6 +25,7 @@ public class HDFS_Converter {
 			throw new Exception("illegal path \n path should contain \"CSV\" folder");
 		}
 
+		this.csv_files = new HashSet<>();
 		this.path = path;
 
 	}
@@ -79,11 +81,11 @@ public class HDFS_Converter {
 	private void convertOrc(){
 		csv_files.forEach(file -> {
 
-			String new_path = path
-					  .substring(0, path.lastIndexOf("."))
-					  .replace("/CSV","/ORC");
+			String new_path = file
+					  .substring(0, file.lastIndexOf("."))
+					  .replace("\\CSV","\\ORC");
 
-			convertToHDFS(path, new_path, "orc");
+			convertToHDFS(file, new_path, "orc");
 
 		});
 	}
@@ -91,11 +93,11 @@ public class HDFS_Converter {
 	private void convertAvro(){
 		csv_files.forEach(file -> {
 
-			String new_path = path
-					  .substring(0, path.lastIndexOf("."))
-					  .replace("/CSV","/Avro");
+			String new_path = file
+					  .substring(0, file.lastIndexOf("."))
+					  .replace("\\CSV","\\Avro");
 
-			convertToHDFS(path, new_path, "com.databricks.spark.avro");
+			convertToHDFS(file, new_path, "com.databricks.spark.avro");
 
 		});
 	}
@@ -103,11 +105,13 @@ public class HDFS_Converter {
 	private void convertParquet(){
 		csv_files.forEach(file -> {
 
-			String new_path = path
-					  .substring(0, path.lastIndexOf("."))
-					  .replace("/CSV","/Parquet");
+			String new_path = file
+					  .substring(0, file.lastIndexOf("."))
+					  .replace("\\CSV","\\Parquet");
 
-			convertToHDFS(path, new_path, "parquet");
+			System.out.println(file + " - " + new_path);
+
+			convertToHDFS(file, new_path, "parquet");
 
 		});
 	}
