@@ -28,7 +28,7 @@ class Schema3 {
         dataModel.put("Product", new ArrayList<>(Arrays.asList("label","comment","type","producer","productFeature",
                 "productPropertyTextual1","productPropertyTextual2","productPropertyTextual3","productPropertyTextual4","productPropertyTextual5",
                 "productPropertyNumeric1","productPropertyNumeric2","productPropertyNumeric3","productPropertyNumeric4","productPropertyNumeric5")));
-        dataModel.put("Offer",  new ArrayList<>(Arrays.asList("product","vendor","price","validFrom","validTo","deliveryDays","offerWebpage")));
+        dataModel.put("Offer",  new ArrayList<>(Arrays.asList("product","vendor","price","validFrom","validTo","deliveryDays","offerWebpage", "publisher", "date")));
         dataModel.put("Review", new ArrayList<>(Arrays.asList("reviewFor","reviewer","reviewDate","title","text","rating1","rating2","rating3","rating4")));
         dataModel.put("Vendor", new ArrayList<>(Arrays.asList("label","comment","type","homepage","country")));
         dataModel.put("Reviewer", new ArrayList<>(Arrays.asList("name","mbox_sha1sum","country")));

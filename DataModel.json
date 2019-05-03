@@ -41,7 +41,9 @@
         "validFrom",
         "validTo",
         "deliveryDays",
-        "offerWebpage"
+        "offerWebpage",
+        "publisher", 
+        "date"
     ],
     "Review":[
         "reviewFor",
