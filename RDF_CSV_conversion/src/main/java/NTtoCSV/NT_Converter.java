@@ -1,9 +1,8 @@
 package NTtoCSV;
 
 import java.io.*;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.util.FileManager;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -12,13 +11,24 @@ public class NT_Converter {
 
     private String sourceFile;
     private String destinationFile;
-    private Model model;
     private JFileChooser chooser;
+    private FileWriter fileWriter;
 
     public NT_Converter(){
 
         this.chooser = new JFileChooser();
         this.selectSourceFile();
+
+	    System.out.println(this.destinationFile);
+
+	    try {
+
+		    fileWriter = new FileWriter(new File(this.destinationFile), false);
+		    fileWriter.write("subject,predicate,object\n");
+
+	    } catch (IOException e) {
+		    e.printStackTrace();
+	    }
 
     }
 
@@ -33,10 +43,7 @@ public class NT_Converter {
 
             this.sourceFile =  chooser.getSelectedFile().getAbsolutePath();
 
-            this.destinationFile = chooser
-                    .getCurrentDirectory()
-                    .getAbsolutePath()
-                    .replaceAll("nt$","csv");
+            this.destinationFile = this.sourceFile.replaceAll("nt$","csv");
 
         } else {
 
@@ -46,41 +53,47 @@ public class NT_Converter {
         }
     }
 
-    public NT_Converter read() {
+    public void convert() {
 
-        this.model = ModelFactory.createDefaultModel();
+	    BufferedReader bufferedReader;
 
         try{
 
-            InputStream inputStream = FileManager.get().open(sourceFile);
+	        bufferedReader = Files.newBufferedReader(Paths.get(this.sourceFile));
 
-            if(inputStream == null)
-                System.out.println("File not specified or not exists!");
-            else
-                model = model.read(inputStream, null, "N-TRIPLE");
+	        String line;
+	        while ((line = bufferedReader.readLine()) != null) {
+
+	        	String[] cols = line.replaceAll(".$", "")
+				        .trim()
+				        .split(" ", 3);
+
+		        fileWriter.write(normalize(cols[0])+",");
+		        fileWriter.write(normalize(cols[1])+",");
+		        fileWriter.write(normalize(cols[2])+",");
+		        fileWriter.write("\n");
+
+	        }
+
+	        bufferedReader.close();
+	        fileWriter.close();
 
         } catch (Exception e){
 
-            System.err.println("File not specified or not exists!: " + e.getMessage());
+	        e.printStackTrace();
 
         }
 
-        return this;
-
     }
 
-    public void write(){
+    private String normalize(String s){
 
-        if(model != null)
-            try {
-                model.write( new FileWriter(destinationFile));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        else
-            System.out.println("RDF Model is not specified");
+	    int i = s.indexOf('^');
+
+	    s = s.trim().replaceAll("[<>]", "");
+
+	    return (i > 0) ? s.substring(0, i) : s;
 
     }
-
 
 }
