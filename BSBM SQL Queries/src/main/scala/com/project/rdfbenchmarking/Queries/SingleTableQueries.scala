@@ -3,11 +3,78 @@ package com.project.rdfbenchmarking.Queries
 class SingleTableQueries {
 
   /*
-		 * Query 6: Find products having a label that contains a specific string.
-		 *
-		 * The consumer remembers parts of a product name from former searches.
-		 * He wants to find the product again by searching for the parts of the name that he remembers.
-		 * */
+  * Query 1: Find products for a given set of generic features.
+  *
+  * A consumer is looking for a product and has a general idea about what he wants.
+  * */
+
+  val query1 =
+  """
+    |
+    """.stripMargin
+
+  /*
+  * Query 2: Retrieve basic information about a specific product for display purposes
+  *
+  * The consumer wants to view basic information about products found by query 1.
+  * */
+
+  val query2 =
+  """
+    |
+    """.stripMargin
+
+  /*
+  * Query 3: Find products having some specific features and not having one feature
+  *
+  * After looking at information about some products,
+  * the consumer has a more specific idea what we wants.
+  * Therefore, he asks for products having several features but not having a specific other feature.
+  * */
+
+  val query3 =
+  """
+    |
+    """.stripMargin
+
+  /*
+  * Query 4: Find products matching two different sets of features.
+  *
+  * After looking at information about some products,
+  * the consumer has a more specific idea what we wants.
+  * Therefore, he asks for products matching either one set of features or another set.
+  * */
+
+  val query4 =
+  """
+    |
+    """.stripMargin
+
+  /*
+  * Query 5: Find product that are similar to a given product.
+  *
+  * The consumer has found a product that fulfills his requirements.
+  * He now wants to find products with similar features.
+  * */
+
+  val query5 =
+  """
+    |
+    """.stripMargin
+
+  /*
+   * Query 6: Find products having a label that contains a specific string.
+   *
+   * The consumer remembers parts of a product name from former searches.
+   * He wants to find the product again by searching for the parts of the name that he remembers.
+   * */
+
+  /*
+   * Query 6: Find products having a label that contains a specific string.
+   *
+   * The consumer remembers parts of a product name from former searches.
+   * He wants to find the product again by searching for the parts of the name that he remembers.
+   * */
 
   val query6 =
     """
@@ -21,11 +88,36 @@ class SingleTableQueries {
    """.stripMargin
 
   /*
-		 * Query 9: Get information about a reviewer.
-		 *
-		 * In order to decide whether to trust a review, the consumer asks for any
-		 * kind of information that is available about the reviewer.
-		 * */
+  * Query 7: Retrieve in-depth information about a specific product including offers and reviews.
+  *
+  * The consumer has found a products which fulfills his requirements.
+  * Now he wants in-depth information about this product including offers from
+  * German vendors and product reviews if existent.
+  * */
+
+  val query7 =
+  """
+    |
+    """.stripMargin
+
+  /*
+  * Query 8: Give me recent reviews in English for a specific product.
+  *
+  * TThe consumer wants to read the 20 most recent
+  * English language reviews about a specific product.
+  * */
+
+  val query8 =
+  """
+    |
+    """.stripMargin
+
+  /*
+   * Query 9: Get information about a reviewer.
+   *
+   * In order to decide whether to trust a review, the consumer asks for any
+   * kind of information that is available about the reviewer.
+   * */
 
   val query9 =
     """
@@ -48,11 +140,11 @@ class SingleTableQueries {
    """.stripMargin
 
   /*
-		 * Query 10: Get offers for a given product which fulfill specific requirements.
-		 *
-		 * The consumer wants to buy from a vendor in the United States that is able to
-		 * deliver within 3 days and is looking for the cheapest offer that fulfills these requirements.
-		 * */
+   * Query 10: Get offers for a given product which fulfill specific requirements.
+   *
+   * The consumer wants to buy from a vendor in the United States that is able to
+   * deliver within 3 days and is looking for the cheapest offer that fulfills these requirements.
+   * */
 
   val query10 =
     """
@@ -77,11 +169,11 @@ class SingleTableQueries {
     """.stripMargin
 
   /*
-		 * Query 11: Get all information about an offer.
-		 *
-		 * After deciding on a specific offer, the consumer wants to get all information
-		 * that is directly related to this offer.
-		 * */
+   * Query 11: Get all information about an offer.
+   *
+   * After deciding on a specific offer, the consumer wants to get all information
+   * that is directly related to this offer.
+   * */
 
   val query11 =
     """
@@ -92,11 +184,11 @@ class SingleTableQueries {
    """.stripMargin
 
   /*
-		 * Query 12: Export information about an offer into another schemata.
-		 *
-		 * After deciding on a specific offer, the consumer wants to save information
-		 * about this offer on his local machine using a different RDF schema.
-		 * */
+   * Query 12: Export information about an offer into another schemata.
+   *
+   * After deciding on a specific offer, the consumer wants to save information
+   * about this offer on his local machine using a different RDF schema.
+   * */
 
   val query12 =
     """
