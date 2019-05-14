@@ -1,15 +1,15 @@
-package com.company;
+package SchemaConverter;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-public class Main {
+public class SchemaConverter {
 
     private String sourceFile;
     private String destinationFolder;
     private JFileChooser chooser;
 
-    public Main(){
+    public SchemaConverter(){
 
         this.chooser = new JFileChooser();
         this.selectSourceFile();
@@ -41,9 +41,4 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
-
-        new Main();
-
-    }
 }

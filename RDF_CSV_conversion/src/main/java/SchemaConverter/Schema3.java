@@ -1,4 +1,4 @@
-package com.company;
+package SchemaConverter;
 
 import java.io.*;
 import java.util.*;
@@ -69,25 +69,6 @@ class Schema3 {
             String key = items[0];
             int start=key.lastIndexOf("/");
             key = key.substring(start+1).replaceAll("\\d", "");
-
-            if(key.equalsIgnoreCase("product") &&
-		            (read.URItoFilename(items[1]).equalsIgnoreCase("Type") ||
-	                read.URItoFilename(items[1]).equalsIgnoreCase("ProductFeature"))){
-
-            	String _key = read.URItoFilename(items[1]).replaceAll("\\d", "")+"Product";
-	            String[] _value = {items[0], items[1], items[2]};
-	            List<String[]> _current;
-
-	            if(hashTable.containsKey(_key))
-		            _current = hashTable.get(_key);
-	            else
-		            _current = new ArrayList<>();
-
-	            _current.add(_value);
-
-	            hashTable.put(_key, _current);
-
-            }
 
             String [] value = {items[0], items[1], items[2]};
             List<String[]> current;

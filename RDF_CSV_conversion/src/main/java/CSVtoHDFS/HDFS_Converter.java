@@ -11,6 +11,7 @@ import org.apache.spark.sql.SparkSession;
 
 import java.io.File;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class HDFS_Converter {
@@ -45,6 +46,7 @@ public class HDFS_Converter {
 		this.orCreate = SparkSession.builder()
 				  .appName("Spark SQL basic example")
 				  .config("spark.some.config.option", "some-value")
+				  .config("spark.sql.orc.impl", "native")
 				  .getOrCreate();
 
 		return this;
@@ -85,6 +87,8 @@ public class HDFS_Converter {
 					  .substring(0, file.lastIndexOf("."))
 					  .replace("\\CSV","\\ORC");
 
+			System.out.println(file + " - " + new_path);
+
 			convertToHDFS(file, new_path, "orc");
 
 		});
@@ -96,6 +100,8 @@ public class HDFS_Converter {
 			String new_path = file
 					  .substring(0, file.lastIndexOf("."))
 					  .replace("\\CSV","\\Avro");
+
+			System.out.println(file + " - " + new_path);
 
 			convertToHDFS(file, new_path, "com.databricks.spark.avro");
 
@@ -131,8 +137,6 @@ public class HDFS_Converter {
 				  .load(path) // csv path here
 				  .toDF();
 
-		rowDataset.createOrReplaceTempView("RDF_Table");
-
 		rowDataset.write()
 				  .format(format)
 				  .save(newPath); // hdfs path here
@@ -141,15 +145,12 @@ public class HDFS_Converter {
 
 	private void readFiles(final File folder){
 
-		for(final File fileEntry : folder.listFiles()){
-
-			if(fileEntry.isDirectory()){
+		for(final File fileEntry : Objects.requireNonNull(folder.listFiles()))
+			if (fileEntry.isDirectory()) {
 				readFiles(fileEntry);
-			}else{
+			} else {
 				this.csv_files.add(fileEntry.getAbsolutePath());
 			}
-
-		}
 
 	}
 

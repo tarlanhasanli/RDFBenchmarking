@@ -1,4 +1,4 @@
-package com.company;
+package SchemaConverter;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -22,10 +22,10 @@ class Schema2 {
 
         try {
 
-	         List content = read.readData();
+            List content = read.readData();
             Hashtable data = groupDataPredicate(content);
 
-	         read.writeData(data);
+	        read.writeData(data);
 
         } catch (Exception e) {
             e.printStackTrace();

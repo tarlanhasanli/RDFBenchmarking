@@ -1,4 +1,4 @@
-package com.company;
+package SchemaConverter;
 
 import java.io.*;
 import java.util.*;
