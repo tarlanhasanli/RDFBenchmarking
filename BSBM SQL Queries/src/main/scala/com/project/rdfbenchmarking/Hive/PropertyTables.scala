@@ -59,25 +59,20 @@ object PropertyTables {
     RDF_DF_Vendor.createOrReplaceTempView("VendorDF")
     sparkSession.sql("create table if not exists Vendor as select * from VendorDF")
 
-    sparkSession.time(
-      sparkSession.sql(new PropertyTableQueries query6).show()
-    )
+    val stageMetrics = ch.cern.sparkmeasure.StageMetrics(sparkSession)
 
-    sparkSession.time(
-      sparkSession.sql(new PropertyTableQueries query9).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new PropertyTableQueries query10).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new PropertyTableQueries query11).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new PropertyTableQueries query12).show()
-    )
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query1).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query2).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query3).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query4).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query5).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query6).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query7).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query8).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query9).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query10).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query11).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new PropertyTableQueries query12).show())
 
   }
 

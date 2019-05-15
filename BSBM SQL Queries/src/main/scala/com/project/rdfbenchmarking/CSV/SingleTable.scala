@@ -9,6 +9,7 @@ object SingleTable {
 
   def main(args: Array[String]): Unit = {
 
+
     val sparkConf = new SparkConf().setMaster("local").setAppName("SQLSPARK")
     Logger.getLogger("org").setLevel(Level.OFF)
     Logger.getLogger("akka").setLevel(Level.OFF)
@@ -26,30 +27,25 @@ object SingleTable {
       .format("csv")
       .option("header", "true")
       .option("inferSchema", "true")
-      .load("/user/cloudera/RDFBenchHDFS/CSV/SingleTable/SingleTable.csv")
+      .load("/home/cloudera/BSBMPerformanceMeasurement-master/Datasets/CSV/SingleTable/SingleTable.csv")
       .toDF()
 
     RDF_DF.createOrReplaceTempView("SingleTable")
 
-    sparkSession.time(
-      sparkSession.sql(new SingleTableQueries query6).show()
-    )
+    val stageMetrics = ch.cern.sparkmeasure.StageMetrics(sparkSession)
 
-    sparkSession.time(
-      sparkSession.sql(new SingleTableQueries query9).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new SingleTableQueries query10).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new SingleTableQueries query11).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new SingleTableQueries query12).show()
-    )
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query1).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query2).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query3).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query4).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query5).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query6).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query7).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query8).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query9).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query10).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query11).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new SingleTableQueries query12).show())
 
   }
 

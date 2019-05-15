@@ -22,26 +22,20 @@ object VerticalTables {
       .appName("Spark SQL basic example")
       .getOrCreate()
 
+    val stageMetrics = ch.cern.sparkmeasure.StageMetrics(sparkSession)
 
-    sparkSession.time(
-      sparkSession.sql(new VerticalTableQueries query6).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new VerticalTableQueries query9).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new VerticalTableQueries query10).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new VerticalTableQueries query11).show()
-    )
-
-    sparkSession.time(
-      sparkSession.sql(new VerticalTableQueries query12).show()
-    )
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query1).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query2).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query3).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query4).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query5).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query6).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query7).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query8).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query9).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query10).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query11).show())
+    stageMetrics.runAndMeasure(sparkSession.sql(new VerticalTableQueries query12).show())
 
   }
 
