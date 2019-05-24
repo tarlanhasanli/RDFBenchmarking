@@ -8,7 +8,7 @@ class PropertyTableQueries {
   * A consumer is looking for a product and has a general idea about what he wants.
   * */
 
-  val query1 =
+  val query1: String =
     """
       |SELECT DISTINCT subject, label
       |FROM product p, productTypeProduct ptp
@@ -29,7 +29,7 @@ class PropertyTableQueries {
   * The consumer wants to view basic information about products found by query 1.
   * */
 
-  val query2 =
+  val query2: String =
   """
     |SELECT pt.label, pt.comment, pt.producer, productFeature, productPropertyTextual1,
     |productPropertyTextual2, productPropertyTextual3, productPropertyNumeric1,
@@ -49,7 +49,7 @@ class PropertyTableQueries {
   * Therefore, he asks for products having several features but not having a specific other feature.
   * */
 
-  val query3 =
+  val query3: String =
   """
     |SELECT p.subject, p.label
     |FROM product p, productTypeProduct ptp
@@ -71,9 +71,9 @@ class PropertyTableQueries {
   * Therefore, he asks for products matching either one set of features or another set.
   * */
 
-  val query4 =
+  val query4: String =
   """
-    |SELECT distinct p.nr, p.label, p.propertyTex1
+    |SELECT distinct p.nr, p.label, p.productPropertyTextual1
     |FROM product p, productTypeProduct ptp
     |WHERE p.subject = ptp.product
     |AND ptp.productType = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/ProductType1'
@@ -82,7 +82,7 @@ class PropertyTableQueries {
     |) OR (productPropertyNumeric2 > 250 AND p.subject IN (SELECT distinct product FROM productFeatureProduct WHERE productFeature = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/ProductFeature178')))
     |ORDER BY label
     |LIMIT 10
-    |OFFSET 5;
+    |OFFSET 5
     """.stripMargin
 
   /*
@@ -92,7 +92,7 @@ class PropertyTableQueries {
   * He now wants to find products with similar features.
   * */
 
-  val query5 =
+  val query5: String =
   """
     |SELECT DISTINCT p.subject, p.label
     |FROM product p, product po,
@@ -108,7 +108,7 @@ class PropertyTableQueries {
     |AND p.productPropertyNumeric2 < (po.productPropertyNumeric2 + 170)
     |AND p.productPropertyNumeric2 > (po.productPropertyNumeric2 - 170)
     |ORDER BY label
-    |LIMIT 5;
+    |LIMIT 5
     """.stripMargin
 
   /*
@@ -118,7 +118,7 @@ class PropertyTableQueries {
    * He wants to find the product again by searching for the parts of the name that he remembers.
    * */
 
-  val query6 =
+  val query6: String =
     """
       |SELECT subject, label
       |FROM product p
@@ -133,16 +133,18 @@ class PropertyTableQueries {
   * German vendors and product reviews if existent.
   * */
 
-  val query7 =
+  val query7: String =
   """
     |SELECT *
     |FROM (select label from product where subject = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1') p LEFT JOIN
-    |((select o.subject as onr, o.price, v.subject as vnr, v.label from offer o, vendor v where 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1' = o.product AND
-    |o.vendor = v.subject
-    |AND v.country = 'http://downlode.org/rdf/iso-3166/countries#DE'
-    |AND o.validTo > '2008-03-26T00:00:00') ov RIGHT JOIN
-    |(select r.subject as rnr, r.title, pn.subject as pnnr, pn.name, r.rating1, r.rating2 from review r, person pn where r.product = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1' AND
-    |r.person = pn.subject) rpn on (1=1)) on (1=1);
+    | ((select o.subject as onr, o.price, v.subject as vnr, v.label from offer o, vendor v
+    | where 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1' = o.product
+    | AND o.vendor = v.subject
+    | AND v.country = 'http://downlode.org/rdf/iso-3166/countries#DE'
+    | AND o.validTo > '2008-03-26T00:00:00') ov RIGHT JOIN
+    |(select r.subject as rnr, r.title, pn.subject as pnnr, pn.name, r.rating1, r.rating2 from review r, person pn where
+    |r.product = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1' AND
+    |r.person = pn.subject) rpn on (1=1)) on (1=1)
     """.stripMargin
 
   /*
@@ -154,14 +156,14 @@ class PropertyTableQueries {
   * Note: Filter AND r.language = 'en' removed due to lack of column in data model
   * */
 
-  val query8 =
+  val query8: String =
   """
     |SELECT r.title, r.text, r.reviewDate, p.subject, p.name, r.rating1, r.rating2, r.rating3, r.rating4
     |FROM review r, person p
     |WHERE r.product = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromProducer1/Product1'
     |AND r.person = p.subject
     |ORDER BY r.reviewDate DESC
-    |LIMIT 20;
+    |LIMIT 20
     """.stripMargin
 
   /*
@@ -171,13 +173,13 @@ class PropertyTableQueries {
    * kind of information that is available about the reviewer.
    * */
 
-  val query9 =
+  val query9: String =
     """
       |SELECT p.subject, p.name, p.mbox_sha1sum, p.country, r2.subject, r2.product, r2.title
       |FROM review r, person p, review r2
       |WHERE r.subject = 'http://www4.wiwiss.fu-berlin.de/bizer/bsbm/v01/instances/dataFromRatingSite1/Review1'
       |AND r.person = p.subject
-      |AND r2.person = p.subject;
+      |AND r2.person = p.subject
     """.stripMargin
 
   /*
@@ -187,7 +189,7 @@ class PropertyTableQueries {
    * deliver within 3 days and is looking for the cheapest offer that fulfills these requirements.
    * */
 
-  val query10 =
+  val query10: String =
     """
       |SELECT distinct o.subject, o.price
       |FROM offer o, vendor v
@@ -197,7 +199,7 @@ class PropertyTableQueries {
       |AND o.validTo > '2008-03-26T00:00:00'
       |AND o.vendor = v.subject
       |Order BY o.price
-      |LIMIT 10;
+      |LIMIT 10
     """.stripMargin
 
   /*
@@ -209,8 +211,7 @@ class PropertyTableQueries {
    * Note: Data producer removed due to lack of column in data model
    * */
 
-  // TODO Add Following columns to below query: producer
-  val query11 =
+  val query11: String =
     """
       |Select product, vendor, price, validFrom, validTo, deliveryDays, offerWebpage, publisher, date
       |from offer
@@ -224,7 +225,7 @@ class PropertyTableQueries {
    * about this offer on his local machine using a different RDF schema.
    * */
 
-  val query12 =
+  val query12: String =
     """
       |Select p.subject As productNr,
       |p.label As productlabel,

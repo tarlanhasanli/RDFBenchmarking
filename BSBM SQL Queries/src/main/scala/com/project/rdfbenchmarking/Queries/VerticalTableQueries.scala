@@ -8,7 +8,7 @@ class VerticalTableQueries {
   * A consumer is looking for a product and has a general idea about what he wants.
   * */
 
-  val query1 =
+  val query1: String =
   """
     |
     """.stripMargin
@@ -19,7 +19,7 @@ class VerticalTableQueries {
   * The consumer wants to view basic information about products found by query 1.
   * */
 
-  val query2 =
+  val query2: String =
   """
     |
     """.stripMargin
@@ -32,7 +32,7 @@ class VerticalTableQueries {
   * Therefore, he asks for products having several features but not having a specific other feature.
   * */
 
-  val query3 =
+  val query3: String =
   """
     |
     """.stripMargin
@@ -45,7 +45,7 @@ class VerticalTableQueries {
   * Therefore, he asks for products matching either one set of features or another set.
   * */
 
-  val query4 =
+  val query4: String =
   """
     |
     """.stripMargin
@@ -57,7 +57,7 @@ class VerticalTableQueries {
   * He now wants to find products with similar features.
   * */
 
-  val query5 =
+  val query5: String =
   """
     |
     """.stripMargin
@@ -70,7 +70,7 @@ class VerticalTableQueries {
 	* */
 
 
-  val query6 =
+  val query6: String =
     """
       |SELECT subject, object AS label
       |FROM Label
@@ -85,7 +85,7 @@ class VerticalTableQueries {
   * German vendors and product reviews if existent.
   * */
 
-  val query7 =
+  val query7: String =
   """
     |
     """.stripMargin
@@ -97,7 +97,7 @@ class VerticalTableQueries {
   * English language reviews about a specific product.
   * */
 
-  val query8 =
+  val query8: String =
   """
     |
     """.stripMargin
@@ -109,7 +109,7 @@ class VerticalTableQueries {
    * kind of information that is available about the reviewer.
    * */
 
-  val query9 =
+  val query9: String =
     """
       |SELECT n.subject, n.object AS name, m.object AS mbox_sha1sum, c.object AS country
       |r.subject, r.object as reviewFor, t.object as title
@@ -128,7 +128,7 @@ class VerticalTableQueries {
    * deliver within 3 days and is looking for the cheapest offer that fulfills these requirements.
    * */
 
-  val query10 =
+  val query10: String =
     """
       |SELECT DISTINCT p.subject, p.object AS price
       |FROM Price p, Product pr, DeliveryDays dd, ValidTo vt, Country c, Vendor v
@@ -152,7 +152,7 @@ class VerticalTableQueries {
    * that is directly related to this offer.
    * */
 
-  val query11 =
+  val query11: String =
     """
       |SELECT pr.object AS product, v.object AS vendor, p.object AS price,
       |vf.object AS validFrom, vt.object AS validTo, dd.object AS deliveryDays,
@@ -174,7 +174,7 @@ class VerticalTableQueries {
    * about this offer on his local machine using a different RDF schema.
    * */
 
-  val query12 =
+  val query12: String =
     """
       |SELECT p.object AS productNr, lp.object as productLabel, vp.object = vendorName,
       |h.object = vendorHomepage
